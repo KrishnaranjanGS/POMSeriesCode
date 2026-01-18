@@ -10,7 +10,7 @@
 			class-name="com.qa.opencart.listeners.ExtentReportListener" />
 		<listener
 			class-name="com.qa.opencart.listeners.AllureReportListener" />
-					<listener
+		<listener
 			class-name="com.qa.opencart.listeners.AnnotationTransformer" />
 	</listeners>
 

@@ -1,5 +1,6 @@
 package com.qa.opencart.factory;
-//driver initialization is very important. The driver instance has to be the same throughout the flow; throughout the execution.
+//driver initialization is very important. The driver instance has to be the same throughout the flow; throughout 
+//the execution.
 
 import java.io.File;
 import java.io.FileInputStream;

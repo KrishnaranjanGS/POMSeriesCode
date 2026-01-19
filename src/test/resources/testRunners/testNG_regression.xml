@@ -10,7 +10,7 @@
 			class-name="com.qa.opencart.listeners.ExtentReportListener" />
 		<listener
 			class-name="com.qa.opencart.listeners.AllureReportListener" />
-					<listener
+		<listener
 			class-name="com.qa.opencart.listeners.AnnotationTransformer" />
 	</listeners>
 
@@ -34,14 +34,12 @@
 		</classes>
 	</test>
 
-<!--  	<test name="OPencart Register Page Test">
+  	<test name="OPencart Register Page Test">
 		<classes>
 			<class name="com.qa.opencart.tests.RegisterPageTest" />
 		</classes>
-	</test> -->
+	</test>
 	
-
-
 
 
 </suite>

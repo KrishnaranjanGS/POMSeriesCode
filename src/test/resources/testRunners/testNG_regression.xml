@@ -34,11 +34,11 @@
 		</classes>
 	</test>
 
-<!--  	<test name="OPencart Register Page Test">
+  	<test name="OPencart Register Page Test">
 		<classes>
 			<class name="com.qa.opencart.tests.RegisterPageTest" />
 		</classes>
-	</test> -->
+	</test>
 	
 
 

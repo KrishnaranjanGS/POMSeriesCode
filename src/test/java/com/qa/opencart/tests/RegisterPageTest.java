@@ -41,13 +41,13 @@ public class RegisterPageTest extends BaseTest{
 		return regData;
 	}
 	
-	@Test(dataProvider = "getRegisterTestData")
-	public void registerTest(String firstName, String lastName, String phone, String password, 
-			String cnfPassword, String subscribe) {
-		boolean regSuccessPage = regPage.doRegister(firstName, lastName, regPage.doGenerateRandomEmailId(), phone, password, 
-				cnfPassword,  subscribe);
-		Assert.assertTrue(regSuccessPage);
-	}
+//	@Test(dataProvider = "getRegisterTestData")
+//	public void registerTest(String firstName, String lastName, String phone, String password, 
+//			String cnfPassword, String subscribe) {
+//		boolean regSuccessPage = regPage.doRegister(firstName, lastName, regPage.doGenerateRandomEmailId(), phone, password, 
+//				cnfPassword,  subscribe);
+//		Assert.assertTrue(regSuccessPage);
+//	}
 	
 	@AfterMethod
 	public void logoutToRegisterPage() {

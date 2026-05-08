@@ -82,6 +82,7 @@
 					    catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE'){
 						git 'https://github.com/KrishnaranjanGS/POMSeriesCode'
 						bat "mvn clean test -Dsurefire.suiteXmlFiles=src/test/resources/testRunners/testNG_smoke.xml"
+						}
 					}
 				}
 				

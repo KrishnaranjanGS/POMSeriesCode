@@ -9,7 +9,7 @@
 				stage("Build"){
 					steps{
 						git 'https://github.com/jglick/simple-maven-project-with-tests'
-						sh "mvn -Dmaven.test.failure.ignore=true clean package"
+						bat "mvn -Dmaven.test.failure.ignore=true clean package"
 					}
 					post
 					{
@@ -37,7 +37,7 @@
 				    steps{
 					    catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE'){
 							git'https://github.com/KrishnaranjanGS/POMSeriesCode'
-							sh "mvn clean test -Dsurefire.suiteXmlFiles=src/test/resources/testRunners/testNG_regression.xml"
+							bat "mvn clean test -Dsurefire.suiteXmlFiles=src/test/resources/testRunners/testNG_regression.xml"
 						}
 					}
 				}
@@ -81,7 +81,8 @@
 				    steps{
 					    catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE'){
 						git 'https://github.com/KrishnaranjanGS/POMSeriesCode'
-						sh "mvn clean test -Dsurefire.suiteXmlFiles=src/test/resources/testRunners/testNG_smoke.xml"
+						bat "mvn clean test -Dsurefire.suiteXmlFiles=src/test/resources/testRunners/testNG_smoke.xml"
+						}
 					}
 				}
 				
